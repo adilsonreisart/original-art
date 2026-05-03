@@ -33,7 +33,7 @@
         .nav-links {
             display: flex;
             gap: 20px;
-            flex: 1; /* Garante que o menu ocupe espaço para equilibrar o layout */
+            flex: 1;
         }
 
         .nav-links a {
@@ -69,12 +69,12 @@
             display: flex;
             gap: 20px;
             flex: 1;
-            justify-content: flex-end; /* Alinha os ícones ao final (direita) */
+            justify-content: flex-end;
         }
 
         .social-icons a {
             color: var(--dark-black);
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             transition: color 0.3s;
         }
 
@@ -118,3 +118,90 @@
 
         .art-info p {
             color: #666;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* BOTÃO BUY NOW */
+        .buy-btn {
+            display: inline-block;
+            background-color: var(--dark-black);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            transition: background 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            background-color: var(--primary-red);
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 40px;
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+
+        /* Ajuste para Celular */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+            }
+            .nav-links, .social-icons {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#" style="color: var(--primary-red);">Gallery</a>
+            <a href="#">About</a>
+            <a href="mailto:reisartck@gmail.com">Contact</a>
+        </div>
+
+        <div class="brand-name">
+            <h1>ADILSON REISART</h1>
+        </div>
+
+        <div class="social-icons">
+            <a href="https://instagram.com/adilsonreisart" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </nav>
+
+    <main class="gallery">
+        
+        <div class="art-card">
+            <img src="gambit.jpg" alt="Gambit Original Art">
+            <div class="art-info">
+                <h3>GAMBIT</h3>
+                <p>Original Art - Traditional Media</p>
+                <a href="#" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+        <div class="art-card">
+            <img src="anissa.jpg" alt="Anissa Original Art">
+            <div class="art-info">
+                <h3>ANISSA</h3>
+                <p>Original Art - Traditional Media</p>
+                <a href="#" class="buy-btn">BUY NOW</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2026 ADILSON REISART. All rights reserved.
+    </footer>
