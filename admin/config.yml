@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: adilsonreisart/original-art # Confirme se o nome do seu repositório é este mesmo
   branch: main
 
 media_folder: "assets/images" # Onde as fotos da Shakira e outros serão salvas
